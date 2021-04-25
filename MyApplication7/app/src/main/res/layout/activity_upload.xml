@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/upload_toolbar"></include>
+    <ImageView
+        android:id="@+id/sd_cover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:id="@+id/btn_cover"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/drawable_button"
+        android:text="选择封面"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <VideoView
+            android:id="@+id/video_pre"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/play_sign2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_play_button"/>
+    </FrameLayout>
+    <Button
+        android:id="@+id/btn_video"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/drawable_button"
+        android:text="选择视频"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

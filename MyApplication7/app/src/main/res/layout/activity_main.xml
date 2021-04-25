@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/drawable_toolbar"
+        android:theme="@style/Theme.ToolBar"
+        app:popupTheme="@style/menuitemstyle"
+         />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:id="@+id/rv">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/btn_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:fab_addButtonColorNormal="@color/green"
+        app:fab_addButtonColorPressed="#FF7EA285"
+        app:fab_addButtonPlusIconColor="#FFFFFFFF"
+        app:fab_addButtonSize="normal"
+        app:fab_expandDirection="up">
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camera"
+            android:scaleType="center"
+            app:fab_colorNormal="@color/green"
+            app:fab_colorPressed="#FF7EA285"
+            app:fab_size="normal"
+            app:fab_title="相机拍摄" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_folder_open"
+            android:scaleType="center"
+            app:fab_colorNormal="@color/green"
+            app:fab_colorPressed="#FF7EA285"
+            app:fab_size="normal"
+            app:fab_title="选择本地" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</FrameLayout>
